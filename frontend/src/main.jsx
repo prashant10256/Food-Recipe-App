@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import Home from './pages/home/Home.jsx';
 import ErrorPage from './components/ErrorPage.jsx';
+import CategoryPage from './pages/category/CategoryPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home/>
+      },
+      {
+        path: "/categories/:category",
+        element: <CategoryPage/>
       }
     ]
   },

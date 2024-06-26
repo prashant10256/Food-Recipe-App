@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import DesktopNav from './DesktopNav';
 import logo from "/logo.svg"
-import MobileNav from './MobileNav';
+import MobileNav from '../MobileNav';
 
 const Header = () => {
     const [hideLeft, setHideLeft] = useState("-left-[1000px]");
