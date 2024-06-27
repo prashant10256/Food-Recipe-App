@@ -3,6 +3,7 @@ const router = express.Router();
 const ItemController = require("../controllers/ItemController");
 
 
-router.get('/', ItemController.getAllItems)
+router.get('/all-items', ItemController.getAllItems)
+router.get("/items", ItemController.getSearchItems)
 
 module.exports = router;
